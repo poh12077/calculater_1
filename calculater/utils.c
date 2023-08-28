@@ -4,6 +4,7 @@ Node* makeLinkedList(char* buffer) {
 	Node* head = NULL;
 	int flag = 0;
 	float num = 0;
+	insertOperationAtEnd(&head, '(');
 	for (int i = 0; i < BUFFER_SIZE; i++) {
 		char data = *(buffer + i);
 		if (data == '\0') {
@@ -29,6 +30,7 @@ Node* makeLinkedList(char* buffer) {
 			flag = 1;
 		}
 	}
+	insertOperationAtEnd(&head, ')');
 	return head;
 }
 
@@ -195,8 +197,16 @@ int searchParentheses(struct Node* node) {
 			while (add(node)) {
 				printList(head);
 			}
-			deleteNode(node->next->next);
-			deleteNode(node);
+			
+			if (node->next->next->next == NULL && node->prev==NULL) {
+				deleteNode(node->next->next);
+				printList(node->next);
+				return 0;
+			}
+			else {
+				deleteNode(node->next->next);
+				deleteNode(node);
+			}
 			return 1;
 		}
 		node = node->prev;
