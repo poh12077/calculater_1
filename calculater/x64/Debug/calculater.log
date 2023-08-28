@@ -1,0 +1,11 @@
+﻿  main.c
+C:\Users\yhp\Desktop\calculater-master\calculater-master\calculater\main.c(7,2): warning C4013: 'memset' undefined; assuming extern returning int
+C:\Users\yhp\Desktop\calculater-master\calculater-master\calculater\main.c(16,9): warning C4047: '=': 'Node **' differs in levels of indirection from 'Node *'
+C:\Users\yhp\Desktop\calculater-master\calculater-master\calculater\main.c(19,10): warning C4013: 'preprocess' undefined; assuming extern returning int
+  utils.c
+  Generating Code...
+C:\Users\yhp\Desktop\calculater-master\calculater-master\calculater\utils.c(179): warning C4715: 'preprocess': not all control paths return a value
+C:\Users\yhp\Desktop\calculater-master\calculater-master\calculater\utils.c(207): warning C4715: 'searchParentheses': not all control paths return a value
+C:\Users\yhp\Desktop\calculater-master\calculater-master\calculater\utils.c(243): warning C4715: 'add': not all control paths return a value
+C:\Users\yhp\Desktop\calculater-master\calculater-master\calculater\utils.c(273): warning C4715: 'multiply': not all control paths return a value
+  calculater.vcxproj -> C:\Users\yhp\Desktop\calculater-master\calculater-master\x64\Debug\calculater.exe
